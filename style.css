@@ -1,0 +1,788 @@
+@charset "UTF-8";
+
+/*
+Theme Name: Diveto Custom Theme
+Author: Diveto
+Description: 静的HTMLから移植したオリジナルテーマ
+Version: 1.0
+*/
+
+
+
+
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+.wrapper {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+p {
+    font-size: 1.25rem;
+}
+
+/*------------header-------------*/
+.logo {
+    width: 11vw;
+    /*margin-left: 80px;*/
+
+}
+
+.main-nav {
+    display: flex;
+    font-size: 1.25rem;
+    margin-top: 30px;
+    list-style: none;
+    margin-bottom: 10px;
+    /*margin-right: 80px;*/
+}
+
+.main-nav li {
+    margin-left: 55px;
+}
+
+.main-nav a {
+    color: #000;
+}
+
+.main-nav a:hover {
+    color: #999;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+
+
+
+.page-header {
+    background-color: rgba(255, 255, 255, .9);
+    text-align: center;
+    /*display: flex;
+    justify-content: space-between;
+
+    margin: 0 auto;*/
+}
+
+
+
+/*--------HOMEページ------------*/
+
+/*BUSINESS*/
+
+.business {
+    margin-top: 100px;
+}
+
+
+
+.business-title{
+    text-align: center;
+    margin-bottom: 70px;
+    font-size: 2rem;
+}
+
+
+/*AI*/
+
+
+.business_AI-title {
+    text-align: center;
+    margin-bottom: 70px;
+    font-size: 2rem;
+}
+
+
+.business_AI-content .image {
+    width: 45%;
+}
+
+.business_AI-content .lit {
+    
+    width: 40%;
+}
+
+.business_AI-content {
+    margin-left: auto;
+    /* 左のマージンをautoに設定 */
+    margin-right: auto;
+    /* 右のマージンをautoに設定 */
+    max-width: 75vw;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+
+
+
+
+
+/*data*/
+
+.business_data-title {
+    text-align: center;
+    margin-bottom: 70px;
+    font-size: 2rem;
+}
+
+
+.business_data-content .image {
+    width: 45%;
+}
+
+.business_data-content .lit {
+
+    width: 40%;
+}
+
+.business_data-content {
+    margin-left: auto;
+    /* 左のマージンをautoに設定 */
+    margin-right: auto;
+    /* 右のマージンをautoに設定 */
+    max-width: 75vw;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+
+/*system*/
+
+.business_system-title {
+    text-align: center;
+    margin-bottom: 70px;
+    font-size: 2rem;
+}
+
+
+.business_system-content .image {
+    width: 45%;
+}
+
+.business_system-content .lit {
+
+    width: 40%;
+}
+
+.business_system-content {
+    margin-left: auto;
+    /* 左のマージンをautoに設定 */
+    margin-right: auto;
+    /* 右のマージンをautoに設定 */
+    max-width: 75vw;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+
+
+
+/*------------会社概要ページ------------*/
+
+
+/*company*/
+
+.company-title {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-size: 2rem;
+}
+
+
+
+
+/*所在地・沿革*/
+.location {
+    margin-top: 100px;
+}
+
+.location-title {
+    text-align: center;
+    margin-bottom: 70px;
+    font-size: 2rem;
+}
+
+
+.location-content .image {
+    width: 45%;
+}
+
+.location-content .lit {
+    margin-top: 30px;
+    width: 40%;
+}
+
+.lit p {
+    margin-bottom: 30px;
+}
+
+.location-content {
+    margin-left: auto;
+    /* 左のマージンをautoに設定 */
+    margin-right: auto;
+    /* 右のマージンをautoに設定 */
+    max-width: 75vw;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+/*ACCESS*/
+.access-title {
+    margin-top: 100px;
+    text-align: center;
+    margin-bottom: 100px;
+    font-size: 2rem;
+}
+
+.location-map {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.access {
+    margin-bottom: 150px;
+}
+
+
+
+/*-----------AI製品ページ------------*/
+
+.shohin-title {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-size: 2rem;
+}
+
+.shohin-grid {
+    display: grid;
+    gap: 7%;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    max-width: 70%;
+    margin-top: 6%;
+    margin-bottom: 200px;
+}
+
+
+.item {
+    aspect-ratio: 3 / 3;
+    width: auto;
+    background-color: #f0f0f0;
+    /* 背景つけて確認しやすく */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* テキストも中央寄せ */
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 12px;
+}
+
+
+
+.item img {
+    max-width: 80%;
+    height: 200px;
+}
+
+
+.item:hover {
+    background-color: rgba(220, 220, 220, 1);
+    /* 少しグレーっぽくする */
+    transform: scale(1.05);
+    /* 少し大きく */
+}
+
+
+/*--------------改善実績ページ-------------*/
+.jisseki-title {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 70px;
+    font-size: 2rem;
+}
+
+.jisseki-grid {
+    display: grid;
+    gap: 7%;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    max-width: 70%;
+    margin-top: 6%;
+    margin-bottom: 200px;
+}
+
+
+.item {
+    aspect-ratio: 3 / 3;
+    width: auto;
+    background-color: #f0f0f0;
+    /* 背景つけて確認しやすく */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* テキストも中央寄せ */
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 12px;
+}
+
+
+
+.item img {
+    max-width: 80%;
+    height: 200px;
+}
+
+
+.item:hover {
+    background-color: rgba(220, 220, 220, 1);
+    /* 少しグレーっぽくする */
+    transform: scale(1.05);
+    /* 少し大きく */
+}
+
+/* -----------------個別実績ページ--------------- */
+.jisseki-single {
+    max-width: 100%;
+    margin: 0 auto 100px auto;
+    padding: 0 4%;
+    text-align: center;
+}
+
+.jisseki-title {
+    margin-top: 80px;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+/* サムネイルや動画などのメディア共通 */
+.jisseki-media,
+.jisseki-content iframe,
+.jisseki-content img {
+    max-width: 40%;
+    width: 100%;
+    height: auto;
+    margin: 0 auto 30px auto;
+    display: block;
+}
+
+/* 本文（テキスト）は最大70%幅で中央寄せ */
+.jisseki-content {
+    max-width: 70%;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #333;
+}
+
+.jisseki-content p {
+    margin-bottom: 20px;
+}
+
+
+
+.item-link {
+    text-decoration: none;
+    /* 下線なし */
+    color: inherit;
+    /* 親要素と同じ色に */
+    display: block;
+}
+
+.item-link:visited {
+    color: inherit;
+    /* 訪問済みでも紫にしない */
+}
+
+.item-link:hover {
+    color: inherit;
+    /* ホバー時も変えない */
+}
+
+/* 埋め込み動画のレスポンシブ対応 */
+.jisseki-content iframe {
+    aspect-ratio: 16 / 9;
+    height: auto;
+    border: none;
+}
+
+/* -----------------個別AI製品ページ--------------- */
+.shohin-single {
+    max-width: 100%;
+    margin: 0 auto 100px auto;
+    padding: 0 4%;
+    text-align: center;
+}
+
+.shohin-title {
+    margin-top: 80px;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+/* サムネイルや動画などのメディア共通 */
+.shohin-media,
+.shohin-content iframe,
+.shohin-content img {
+    max-width: 40%;
+    width: 100%;
+    height: auto;
+    margin: 0 auto 30px auto;
+    display: block;
+}
+
+/* 本文（テキスト）は最大70%幅で中央寄せ */
+.shohin-content {
+    max-width: 70%;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #333;
+}
+
+.shohin-content p {
+    margin-bottom: 20px;
+}
+
+
+
+.item-link {
+    text-decoration: none;
+    /* 下線なし */
+    color: inherit;
+    /* 親要素と同じ色に */
+    display: block;
+}
+
+.item-link:visited {
+    color: inherit;
+    /* 訪問済みでも紫にしない */
+}
+
+.item-link:hover {
+    color: inherit;
+    /* ホバー時も変えない */
+}
+
+/* 埋め込み動画のレスポンシブ対応 */
+.shohin-content iframe {
+    aspect-ratio: 16 / 9;
+    height: auto;
+    border: none;
+}
+
+
+/*------------採用・お問い合わせページ------------*/
+
+
+
+/*contact*/
+.contact-title {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 70px;
+    font-size: 2rem;
+}
+
+
+
+.mail {
+    
+    justify-content: space-between;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+
+
+.contact {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.mail-lit {
+    margin-top: 60px;
+}
+
+.contact h3 {
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
+/*----------footer----------*/
+.footer {
+    background-color: rgba(255, 255, 255, .9);
+    color: #000;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+
+/*-------------------------------------スマホ用スタイル------------------------------------*/
+
+
+/*-------------------以下、ヘッダー部分-------------------*/
+@media (max-width: 768px) {
+    .header-content {
+        display: flex;
+        justify-content: center;
+        /* ロゴ中央 */
+        align-items: center;
+        /* 緯度合わせ（上下中央揃え） */
+        position: relative;
+        padding: 10px 0;
+    }
+
+    .logo {
+        width: 30vw;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1001;
+    }
+
+    .main-nav {
+        flex-direction: column;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.3s ease-out;
+        width: 100%;
+        text-align: center;
+        background-color: white;
+        z-index: 1000;
+    }
+
+    .main-nav.open {
+        display: flex;
+        max-height: 1000px;
+        transition: max-height 0.5s ease-in;
+    }
+
+    .main-nav li {
+        padding: 12px 0;
+        border-bottom: 1px solid #ddd;
+        margin: 0;
+    }
+
+    .main-nav a {
+        display: block;
+        width: 100%;
+        color: #000;
+    }
+
+    .main-nav a:hover {
+        background-color: #f5f5f5;
+    }
+
+    body.fixed {
+        overflow: hidden;
+    }
+
+    .hamburger::after {
+        content: '≡';
+        font-size: 2rem;
+    }
+
+    .hamburger.active::after {
+        content: '×';
+    }
+
+/*----------------------以下、トップページ-------------------*/
+
+
+    .business_AI-content {
+        display: flex;
+        flex-direction: column;
+        /* 縦並び */
+        align-items: center;
+        /* 中央寄せ（左右） */
+        text-align: center;
+        /* テキスト中央寄せ */
+    }
+
+    .business_AI-content .image,
+    .business_AI-content .lit {
+        width: 100%;
+        /* 幅を100%に */
+        max-width: 600px;
+        /* 中央寄せ感を保つ */
+        margin-bottom: 20px;
+    }
+
+    .business_AI-content .image img {
+        width: 100%;
+        height: auto;   }
+
+
+
+    .business_data-content {
+        display: flex;
+        flex-direction: column;
+        /* 縦並び */
+        align-items: center;
+        /* 中央寄せ（左右） */
+        text-align: center;
+        /* テキスト中央寄せ */
+    }
+
+    .business_data-content .image,
+    .business_data-content .lit {
+        width: 100%;
+        /* 幅を100%に */
+        max-width: 600px;
+        /* 中央寄せ感を保つ */
+        margin-bottom: 20px;
+    }
+
+    .business_data-content .image img {
+        width: 100%;
+        height: auto;   }
+
+
+
+    .business_system-content {
+        display: flex;
+        flex-direction: column;
+        /* 縦並び */
+        align-items: center;
+        /* 中央寄せ（左右） */
+        text-align: center;
+        /* テキスト中央寄せ */
+    }
+
+    .business_system-content .image,
+    .business_system-content .lit {
+        width: 100%;
+        /* 幅を100%に */
+        max-width: 600px;
+        /* 中央寄せ感を保つ */
+        margin-bottom: 20px;
+    }
+
+    .business_system-content .image img {
+        width: 100%;
+        height: auto;   }
+
+
+
+/*---------------------以下、会社概要ページ----------------------------*/        
+
+    .location-content {
+        display: flex;
+        flex-direction: column;
+        /* 縦並び */
+        align-items: center;
+        /* 中央寄せ */
+        text-align: center;
+        /* テキスト中央揃え */
+    }
+
+    .location-content .image,
+    .location-content .lit {
+        width: 100%;
+        max-width: 600px;
+        /* 読みやすく幅を制限 */
+        margin-bottom: 20px;
+    }
+
+    .location-content .image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .location-content .lit p {
+        margin-bottom: 12px;       }
+
+}
+
+/*----------------------以下AI製品・実績個別ページ----------------------*/
+
+@media (max-width: 768px) {
+    .jisseki-grid {
+        grid-template-columns: 1fr;
+        /* 1列に */
+        gap: 20px;
+        padding: 0 5%;
+    }
+
+
+    .shohin-grid {
+        grid-template-columns: 1fr;
+        /* 1列に */
+        gap: 20px;
+        padding: 0 5%;
+        }
+
+    .item {
+        aspect-ratio: 3 / 3;
+        /* PCと同じ比率を保つ */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    .item img {
+        max-width: 80%;
+        height: auto;
+    }
+
+    .item h3,
+    .item p {
+        text-align: center;
+        padding: 0 10px;
+    }
+}
