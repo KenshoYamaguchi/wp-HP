@@ -48,10 +48,10 @@ function create_custom_post_types() {
 }
 add_action('init', 'create_custom_post_types');
 
-
+/*以下、画像の全幅表示対応 */
 add_theme_support( 'align-wide' );
 
-
+/*フッターメニューの追加*/
 function register_my_menus() {
   register_nav_menus(
     array(
